@@ -207,6 +207,65 @@ main {
   object-position: center;
 }
 
+.showcase-placeholder {
+  display: grid;
+  min-height: 100%;
+  aspect-ratio: 4 / 3;
+  place-items: center;
+  padding: 1.4rem;
+}
+
+.smarthome-placeholder {
+  background:
+    linear-gradient(135deg, rgba(13, 148, 136, 0.95), rgba(26, 34, 48, 0.96)),
+    radial-gradient(circle at 78% 22%, rgba(249, 115, 22, 0.32), transparent 34%);
+}
+
+.placeholder-panel {
+  width: min(82%, 330px);
+  padding: 1.2rem;
+  border: 1px solid rgba(255, 247, 239, 0.28);
+  border-radius: 16px;
+  background: rgba(255, 247, 239, 0.13);
+  box-shadow: 0 18px 38px rgba(5, 18, 26, 0.24);
+}
+
+.placeholder-panel span,
+.placeholder-panel strong {
+  display: block;
+}
+
+.placeholder-panel span {
+  color: #bff5ee;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.placeholder-panel strong {
+  margin: 0.3rem 0 1rem;
+  color: #fff7ef;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(1.45rem, 2.4vw, 2.1rem);
+  line-height: 1.1;
+}
+
+.placeholder-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.placeholder-metrics small {
+  display: grid;
+  min-height: 48px;
+  place-items: center;
+  border-radius: 10px;
+  background: rgba(255, 247, 239, 0.18);
+  color: #fff7ef;
+  font-weight: 700;
+}
+
 .showcase-content {
   padding: 1.6rem 1.8rem;
 }
@@ -405,5 +464,10 @@ ul {
     height: auto;
     min-height: 0;
     max-height: none;
+  }
+
+  .showcase-placeholder {
+    aspect-ratio: 16 / 9;
+    min-height: 0;
   }
 }
