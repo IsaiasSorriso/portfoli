@@ -35,22 +35,12 @@
       <h2>Projetos</h2>
       <div class="projects-grid">
         <article class="project-showcase">
-          <div class="showcase-placeholder smarthome-placeholder" role="img" aria-label="Dashboard do projeto Smart Home com sensores de temperatura, luminosidade e movimento">
-            <div class="placeholder-panel">
-              <span>Smart Home</span>
-              <strong>IoT + Automação</strong>
-              <div class="placeholder-metrics">
-                <small>26.4 C</small>
-                <small>72%</small>
-                <small>Online</small>
-              </div>
-            </div>
-          </div>
+          <img class="showcase-image" src="imgs/img_smarthome.png" alt="Interface do projeto Smart Home com painel de automação residencial" />
           <div class="showcase-content">
             <h3>Smart Home - Sistema de Automação Residencial</h3>
             <p>Projeto integrado de casa inteligente com monitoramento de sensores, automação de dispositivos e painel de controle para acompanhar temperatura, luminosidade, presença e eventos da residência. A solução conecta ESP32, comunicação MQTT, backend em Spring Boot e interfaces web/mobile para gerenciamento dos dispositivos e regras de automação.</p>
             <p><strong>Metodologias:</strong><br />Scrum, desenvolvimento incremental e testes de integração entre IoT, backend e interface.</p>
-            <p><strong>Responsabilidades:</strong><br />Back-End, Front-End, Mobile, IoT e testes.</p>
+            <p><strong>Responsabilidades:</strong><br />Front-End e Testes.</p>
             <div class="showcase-footer">
               <div class="tech-icons" aria-label="Tecnologias usadas">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="Kotlin" />
@@ -64,7 +54,12 @@
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="" aria-hidden="true" />
                   <span>Ver projeto</span>
                 </a>
+                <button class="gallery-toggle" type="button" data-target="gallery-smarthome" aria-expanded="false">Ver Imagens</button>
               </div>
+            </div>
+            <div class="project-gallery" id="gallery-smarthome">
+              <img class="gallery-thumb" src="imgs/smarthome_dashboard.png" alt="Dashboard web do Smart Home com sensores e alertas" />
+              <img class="gallery-thumb" src="imgs/smarthome_mobile.png" alt="Tela mobile do Smart Home para controle residencial" />
             </div>
           </div>
         </article>
